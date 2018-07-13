@@ -1,0 +1,317 @@
+*{
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+
+<style>
+
+/*Font Roboto*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*fine Font Roboto*/
+
+
+/*spinner*/
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spinner .6s linear infinite;
+}
+/*fine dello spinner*/
+
+
+</style>
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #2A2D31;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #bde2df;
+	text-decoration: none;
+}
+
+a.current {color: red;}
+
+header{
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    background-color: #F9EB6C;
+    height: auto;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 30px;
+    font-stretch: extra-condensed;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*classi*/
+
+/*parallasse*/
+.MenuPagina
+{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 80%;
+    height: 60px;
+    background-color: #F9EB6C;
+    /*
+    background-color: rgba(0,0,0,1.0);
+    */
+    z-index: 100;
+}
+
+nav {
+	margin: 20px 0 0 0;
+}
+.navigation {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+.navigation li{
+	display: inline-block;
+	padding: 0 25px 0 0;
+}
+
+.slide{
+	width:100%;
+	position: relative;
+	padding: 150px 0;
+	text-align: center;
+}
+
+#container {
+	padding: 20px;
+	margin: 0 auto;
+	width: 600px;
+	text-align: center;
+	background-color: #efefef;
+}
+#pulsante {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 18px Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 10px 20px;
+ border: solid 1px #0076a3;
+ background: #0095cd;
+ background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+ background: -webkit-linear-gradient(top,  #00adee,  #0078a5);
+ background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+ background: -ms-linear-gradient(top,  #00adee,  #0078a5);
+ background: -o-linear-gradient(top,  #00adee,  #0078a5);
+ background: linear-gradient(top,  #00adee,  #0078a5);
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+#pulsante:hover {
+ background: #0095cd;
+ background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+ background: -webkit-linear-gradient(top,  #0078a5,  #00adee);
+ background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+ background: -ms-linear-gradient(top,  #0078a5,  #00adee);
+ background: -o-linear-gradient(top,  #0078a5,  #00adee);
+ background: linear-gradient(top,  #0078a5,  #00adee);
+}
+#pulsante:active {
+	position: relative;
+	top: 1px;
+}
+
+.slide
+{
+    width: 100%;
+    position: relative;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#slide1 {
+ height: 100%;
+	background-image:url('../images/1.jpg');
+	background-color:#fff;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#slide3 {
+	background-image:url('../images/2.jpg');
+	background-color:#fff;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#slide5 {
+	background-image:url('../images/3.jpg');
+	background-color:#fff;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#slide2, #slide4, #slide6 {
+	background-color:#ffffff;
+	box-shadow: 0 18px 14px -14px rgba(0,0,0,0.6), 0 -18px 14px -14px rgba(0,0,0,0.6);
+	z-index: 10;
+}
+
+a.current
+{
+    color: red;
+}
+
+/*parallasse*/
+
+
+
+.triangolosx {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right:10px solid blue;
+
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+.contenitore{
+    position: relative;
+    height: 20px;
+    width: 4000px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-stretch: extra-condensed;
+}
+
+.menulink{
+    color: #F9EB6C;
+
+}
+
+.menulink::before, .menulink::after{
+    position: absolute;
+	top: 100%;
+  left: 0px;
+	width: 10%;
+	height: 1px;
+	background: #FFFEFF;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	-moz-transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	transform: scale(0.85);
+    color: #FFFEFF;
+}
+
+.menulink::after{
+    opacity: 0;
+}
+
+.menulink:hover::before,.menulink:hover::after
+{
+    -webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.menulink:hover::after{
+    top: 0%;
+    opacity: 1;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+footer{
+    background-color: #F9EB6C;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+
+}
