@@ -4,34 +4,13 @@
     padding:0px;
 }
 
-/*spinner*/
-@keyframes spinner {
-  to {transform: rotate(360deg);}
-}
-
-.spinner:before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  border-top-color: #333;
-  animation: spinner .6s linear infinite;
-}
-/*fine dello spinner*/
 
 /*html*/
 
 html{
     height: 100%;
     width: 100%
-}
+  }
 
 body{
     background-color: rgba(36, 36, 36, 1);
@@ -40,18 +19,20 @@ body{
     margin:0;
     position: relative;
     font-family: 'Roboto', sans-serif;
-}
+  }
+
+  /*aspetto dei link*/
 
 a:link{
-	color: #fff;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #0B6482;
 }
 
 a:visited {
 	color: #fff;
   font-family: 'Roboto', sans-serif;
 }
-
 
 a:hover {
 	color: #bde2df;
@@ -61,34 +42,41 @@ a:hover {
 a.current {color: red;}
 
 
+/*----------------------------------------------------------
+  questa è la barra principale, è un po' un casino
+  ma dovrebbe essere alta il 15% della pagina e contenere i
+  bottoni che rimandino ai contenuti della pagina
+  ----------------------------------------------------------*/
+
+.header{
+}
+
 header{
     position: fixed;
     text-align: left;
+    top: 0px;
     width: 100%;
-    background-color: #F9EB6C;
-    height: auto;
+    background-color: #73BCB2;
+    height: 20%;
     font-family: 'Roboto', sans-serif;
     font-weight: 30px;
-    padding: 20px;
+    z-index: 100;
 }
 
-p{
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
+h1{
+  color: #0B6482;
+  position:relative;
+  top: 10%;
+  left: 5%;
 }
 
-footer{
-    background-color: #F9EB6C;
-    width: 100%;
-    height: 50px;
-    bottom: 0px;
-
+h2{
+  color: #0B6482;
+  position:relative;
+  top: 5%;
+  left: 5%;
 }
 
-
-/*classi*/
-
-/*parallasse*/
 .menupagina
 {
     position: fixed;
@@ -96,123 +84,78 @@ footer{
     right: 0px;
     width: 80%;
     height: 60px;
-    background-color: #F9EB6C;
     z-index: 90;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%  ;
+	text-align: center;
 }
 
 nav {
 	margin: 0 0 0 0;
 }
+
 .navigation {
 	list-style: none;
 	text-align: center;
 	margin: 0;
 }
+
 .navigation li{
 	display: inline-block;
 	padding: 0 25px 0 0;
 }
 
-.slide{
-	width:100%;
-	position: relative;
-	padding: 150px 0;
-	text-align: center;
-}
-
-#container {
-	padding: 20px;
-	margin: 0 auto;
-	width: 100%  ;
-	text-align: center;
-	background-color: red;
-}
 #pulsante {
- cursor: pointer;
+ cursor: s-resize;
  text-align: center;
  font-size: 15px;
  font-family: 'Roboto', sans-serif;
  color: #b5d000;
  padding: 10px 20px;
- border: solid 1px #0076a3;
- background: #b5d000;
+ background: #B1D4C2;
  background: linear-gradient(top,  #00adee,  #0078a5);
- border-radius: 8px;
- box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ border-radius: 3px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
+
 #pulsante:hover {
- background: #0095cd;
- background: -webkit-linear-gradient(top,  #0078a5,  #00adee);
- background: -moz-linear-gradient(top,  #0078a5,  #00adee);
- background: -ms-linear-gradient(top,  #0078a5,  #00adee);
- background: -o-linear-gradient(top,  #0078a5,  #00adee);
- background: linear-gradient(top,  #0078a5,  #00adee);
+ background-color: #D4DBD8;
+ border-width: 4px;
+ border-color: #88C8B5;
+ box-shadow: 0 0 0 rgba(0,0,0,1);
+
 }
+
 #pulsante:active {
 	position: relative;
 	top: 1px;
 }
+/*----------------------------------------------------------*/
 
-.slide
-{
-    width: 100%;
-    position: relative;
-    padding: 150px 0;
-    text-align: center;
+
+/*----------------------------------------------------------
+  MENU LATERALE
+  menu laterale distante 15% dal sopra e largo 20% e alto 85%
+  ----------------------------------------------------------*/
+
+aside{
 }
 
-#slide1 {
- height: 100%;
-	background-image:url('../images/1.jpg');
-	background-color:#fff;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
+#barralaterale{
+  background-color: rgba(36, 36, 36, 1);
+  position:fixed;
+  top:20%;
+  left:0px;
+  height: 90%;
+  width: 20%;
+  z-index: 200;
 }
 
-#slide3 {
-	background-image:url('../images/2.jpg');
-	background-color:#fff;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#slide5 {
-	background-image:url('../images/3.jpg');
-	background-color:#fff;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#slide2, #slide4, #slide6 {
-	background-color:#ffffff;
-	box-shadow: 0 18px 14px -14px rgba(0,0,0,0.4), 0 -18px 14px -14px rgba(0,0,0,0.4);
-	z-index: 10;
-}
-
-a.current
-{
-    color: red;
-}
-
-/*parallasse*/
-
-.content {
-  padding: 16px;
-}
-
-/* barra laterale del menu */
-
-.barralaterale
 .contenitore{
     position: relative;
-    height: 50px;
-    width: 40p;
     text-align: left;
     padding-top: 20px;
     padding-left: 15px;
@@ -223,36 +166,98 @@ a.current
 
 .menulink{
     color: #F9EB6C;
-
 }
 
-.menulink::before, .menulink::after{
-    position: absolute;
-	top: 100%;
-  left: 0px;
-	width: 10%;
-	height: 1px;
-	background: #FFFEFF;
+/*----------------------------------------------------------
+corpo della Pagina
+ ----------------------------------------------------------*/
+
+main{
 }
 
-.menulink::after{
-    opacity: 0;
+.spazio{
+  overflow:scroll;
+  position:absolute;
+  top: 20%;
+  right: 0px;
+  height: 85%;
+  width: 80%;
+  }
+
+.slide{
+    width: 100%;
+    position: relative;
+    padding: 150px 0;
+    text-align: center;
 }
 
-.menulink:hover::before,.menulink:hover::after
-{
-    -webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
+.paragrafoprimo{
+  text-align: justify;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  width: 150px;
+  height: 100px;
+  transform: translate(-50%, -50%);
 }
 
-.menulink:hover::after{
-    top: 0%;
-    opacity: 1;
+
+/*----------------------------------------------------------
+immagini
+ ----------------------------------------------------------*/
+#slide1 {
+  height: 100%;
+	background-image:url('../images/1.jpg');
+	background-color:#fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#slide3 {
+	background-image:url('../images/2.jpg');
+	background-color:#fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#slide5 {
+	background-image:url('../images/3.jpg');
+	background-color:#fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*----------------------------------------------------------
+slide di contenuto
+ ----------------------------------------------------------*/
+
+#slide2, #slide4, #slide6 {
+	background-color:#ffffff;
+	box-shadow: 0 18px 14px -14px rgba(0,0,0,0.4), 0 -18px 14px -14px rgba(0,0,0,0.4);
+	z-index: 10;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #0B6482;
+  font-size: 20px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    color: #0B6482;
 }
 
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/*parallasse*/
+/*
+.content {
+  padding: 16px;
+}
+
+
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -260,10 +265,18 @@ a.current
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+footer{
+    background-color: #F9EB6C;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+
 }
