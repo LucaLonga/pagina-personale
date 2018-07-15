@@ -4,13 +4,6 @@
     padding:0px;
 }
 
-<style>
-
-/*Font Roboto*/
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-/*fine Font Roboto*/
-
-
 /*spinner*/
 @keyframes spinner {
   to {transform: rotate(360deg);}
@@ -33,15 +26,15 @@
 }
 /*fine dello spinner*/
 
-
-</style>
+/*html*/
 
 html{
     height: 100%;
+    width: 100%
 }
 
 body{
-    background-color: #2A2D31;
+    background-color: rgba(36, 36, 36, 1);
     width: 100%;
     height: 100%;
     margin:0;
@@ -49,10 +42,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-a:link, a:visited {
+a:link{
 	color: #fff;
-	text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
+
+a:visited {
+	color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
 a:hover {
 	color: #bde2df;
 	text-decoration: none;
@@ -60,41 +60,48 @@ a:hover {
 
 a.current {color: red;}
 
+
 header{
     position: fixed;
     text-align: left;
     width: 100%;
     background-color: #F9EB6C;
     height: auto;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 30px;
-    font-stretch: extra-condensed;
-    padding: 20px;
     font-family: 'Roboto', sans-serif;
+    font-weight: 30px;
+    padding: 20px;
 }
 
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+footer{
+    background-color: #F9EB6C;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+
+}
 
 
 /*classi*/
 
 /*parallasse*/
-.MenuPagina
+.menupagina
 {
     position: fixed;
-    top: 0px;
+    top: 40px;
     right: 0px;
     width: 80%;
     height: 60px;
     background-color: #F9EB6C;
-    /*
-    background-color: rgba(0,0,0,1.0);
-    */
-    z-index: 100;
+    z-index: 90;
 }
 
 nav {
-	margin: 20px 0 0 0;
+	margin: 0 0 0 0;
 }
 .navigation {
 	list-style: none;
@@ -116,36 +123,25 @@ nav {
 #container {
 	padding: 20px;
 	margin: 0 auto;
-	width: 600px;
+	width: 100%  ;
 	text-align: center;
-	background-color: #efefef;
+	background-color: red;
 }
 #pulsante {
- outline: none;
  cursor: pointer;
  text-align: center;
- text-decoration: none;
- font: bold 18px Arial, Helvetica, sans-serif;
- color: #fff;
+ font-size: 15px;
+ font-family: 'Roboto', sans-serif;
+ color: #b5d000;
  padding: 10px 20px;
  border: solid 1px #0076a3;
- background: #0095cd;
- background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
- background: -webkit-linear-gradient(top,  #00adee,  #0078a5);
- background: -moz-linear-gradient(top,  #00adee,  #0078a5);
- background: -ms-linear-gradient(top,  #00adee,  #0078a5);
- background: -o-linear-gradient(top,  #00adee,  #0078a5);
+ background: #b5d000;
  background: linear-gradient(top,  #00adee,  #0078a5);
- -moz-border-radius: 8px;
- -webkit-border-radius: 8px;
  border-radius: 8px;
- -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
- -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 #pulsante:hover {
  background: #0095cd;
- background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
  background: -webkit-linear-gradient(top,  #0078a5,  #00adee);
  background: -moz-linear-gradient(top,  #0078a5,  #00adee);
  background: -ms-linear-gradient(top,  #0078a5,  #00adee);
@@ -195,7 +191,7 @@ nav {
 
 #slide2, #slide4, #slide6 {
 	background-color:#ffffff;
-	box-shadow: 0 18px 14px -14px rgba(0,0,0,0.6), 0 -18px 14px -14px rgba(0,0,0,0.6);
+	box-shadow: 0 18px 14px -14px rgba(0,0,0,0.4), 0 -18px 14px -14px rgba(0,0,0,0.4);
 	z-index: 10;
 }
 
@@ -206,40 +202,17 @@ a.current
 
 /*parallasse*/
 
-
-
-.triangolosx {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-
-  border-right:10px solid blue;
-
-}
-
-/* Page content */
 .content {
   padding: 16px;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+/* barra laterale del menu */
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
-
-
+.barralaterale
 .contenitore{
     position: relative;
-    height: 20px;
-    width: 4000px;
+    height: 50px;
+    width: 40p;
     text-align: left;
     padding-top: 20px;
     padding-left: 15px;
@@ -260,14 +233,6 @@ a.current
 	width: 10%;
 	height: 1px;
 	background: #FFFEFF;
-	content: '';
-	-webkit-transition: -webkit-transform 0.2s;
-	-moz-transition: -moz-transform 0.2s;
-	transition: transform 0.2s;
-	-webkit-transform: scale(0.85);
-	-moz-transform: scale(0.85);
-	transform: scale(0.85);
-    color: #FFFEFF;
 }
 
 .menulink::after{
@@ -301,17 +266,4 @@ a.current
     flex: 100%;
     max-width: 100%;
   }
-}
-
-p{
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-}
-
-footer{
-    background-color: #F9EB6C;
-    width: 100%;
-    height: 50px;
-    bottom: 0px;
-
 }
