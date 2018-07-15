@@ -175,14 +175,6 @@ corpo della Pagina
 main{
 }
 
-.spazio{
-  overflow:scroll;
-  position:absolute;
-  top: 20%;
-  right: 0px;
-  height: 85%;
-  width: 80%;
-  }
 
 .slide{
     width: 100%;

@@ -18,6 +18,9 @@
         max-width: 300px;
         margin: auto;
         text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 30%;
     }
 
     .title {
@@ -25,21 +28,16 @@
         font-size: 18px;
     }
 
-    button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-    }
+    .spazio{
+      overflow:fixed;
+      position:absolute;
+      top: 20%;
+      right: 0px;
+      height: 80%;
+      width: 80%;
+      background-color: #B1D4C2;
+      }
 
-    button:hover, a:hover {
-        opacity: 0.7;
-    }
 
     @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
@@ -62,7 +60,7 @@
 <aside>
   <nav id="barralaterale">
     <ul>
-      <li><div class="contenitore"><a href="00Home.html" class="menulink">HOME</a></div></li>
+      <li><div class="contenitore"><a href="index.html" class="menulink">HOME</a></div></li>
       <li><div class="contenitore"><a href="01biografia.html" class="menulink">BIO</a></div></li>
       <li><div class="contenitore"><a href="02portfolio.html" class="menulink">PORTFOLIO</a></div></li>
       <li><div class="contenitore"><a href="03contatti.html" class="menulink">CONTATTI</a></div></li>
@@ -73,8 +71,8 @@
 
   <main class="spazio">
     <div class="card">
-      <img src="img.jpg" alt="John" style="width:100%">
-      <h1>John Doe</h1>
+      <img src="images/sito-2.jpg" alt="John" style="width:100%">
+      <h1>Luca Longa</h1>
       <p class="title">Grafico</p>
       <p>Scuola del Design del Politecnico di Milano</p>
       <a href="#"><i class="fa fa-twitter"></i></a>
