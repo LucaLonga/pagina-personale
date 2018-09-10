@@ -1,0 +1,83 @@
+body {background-color: black}
+
+#sole {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: yellow;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#quadratoterra {
+  height: 500px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#terra {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: blue;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.immobile {
+  position: fixed;
+}
+
+#quadratomarte {
+  height: 500px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#marte {
+  top: 50%;
+  left: 107%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.invisibile {
+  height: 0px;
+  width: 0px;
+}
+
+.visibile {
+height: 25px;
+width: 25px;
+border-radius: 50%;
+background-color: red;
+}
+
+@keyframes orbita-terra {
+  0%{transform:translate(-50%, -50%) rotate(0);}
+    100%{transform:translate(-50%, -50%) rotate(360deg);}
+}
+ .orbita1 {
+   animation: orbita-terra 1s linear infinite;
+ }
+
+ @keyframes orbita-marte {
+   0%{transform:translate(-50%, -50%) rotate(0);}
+     100%{transform:translate(-50%, -50%) rotate(-360deg);}
+ }
+  .orbita2 {
+    animation: orbita-marte 2s linear infinite;
+  }
+
+
+</style>

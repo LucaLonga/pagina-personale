@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A recreation of the collapsing logo effect seen on PracticalVR.">
+	<meta name="keywords" content="logo, animation, effect, demo, web developemnt, animejs">
+	<meta name="author" content="Luca Longa" />
+
+	<link rel="shortcut icon" href="./logositosmall.png">
+
+	<link rel="stylesheet" type="text/css" href="./style_port.css">
+
+	<title>LL DESIGN</title>
+
+
+	<script src="jquery-3.3.1.js">document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+
+
+</head>
+<body>
+
+	<!-- LOADER -->
+
+	<div class="pre-loader">
+		<div class="sk-fading-circle">
+			<div class="sk-circle1 sk-circle"></div>
+			<div class="sk-circle2 sk-circle"></div>
+			<div class="sk-circle3 sk-circle"></div>
+			<div class="sk-circle4 sk-circle"></div>
+			<div class="sk-circle5 sk-circle"></div>
+			<div class="sk-circle6 sk-circle"></div>
+			<div class="sk-circle7 sk-circle"></div>
+			<div class="sk-circle8 sk-circle"></div>
+			<div class="sk-circle9 sk-circle"></div>
+			<div class="sk-circle10 sk-circle"></div>
+			<div class="sk-circle11 sk-circle"></div>
+			<div class="sk-circle12 sk-circle"></div>
+		</div>
+	</div>
+
+	<!-- ======================================= -->
+
+
+	<main>
+
+		<div class="content">
+
+			<div class="sidebar">
+				<div>
+					<a href="index.html">
+					<img src="logositolarge.png">
+					</a>
+				</div>
+				<nav class="menu menu--laterale">
+
+					<a class="menu__item" href="./bio.html">
+						<span class="menu__item-name">Biografia</span>
+						<span class="menu__item-label">passioni e istruzione</span>
+					</a>
+
+					<a class="menu__item" href="#">
+						<span class="menu__item-name">Portfolio</span>
+						<span class="menu__item-label">tutti i miei lavori</span>
+					</a>
+
+					<a class="menu__item" href="#">
+						<span class="menu__item-name">Playground</span>
+						<span class="menu__item-label">spinner ed esercizi</span>
+					</a>
+
+					<a class="menu__item" href="./contatti.html">
+						<span class="menu__item-name">Contatti</span>
+					</a>
+
+				</nav>
+			</div>
+
+			<main>
+
+				<div class="content">
+					<div class="content__section" data-bgcolor="#d4438d">
+						<a class="content__link"><img class="content__img" src="img/set3/1.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>MILANO SU FINESTRE - FINESTRE SU MILANO</h2>
+									Progetto fotografico ed editoriale attraverso<br>
+									uno sguard inconsueto alla città di Milano.<br>
+									Attraverso le finestre vengono esplorati gli spazi<br>
+								  e gli edifici principali della città.<br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#ec7c46">
+						<a class="content__link"><img class="content__img" src="img/set3/2.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>900 - PER RACCONTARE UN SECOLO</h2>
+									Progetto fotografico per raccontare il 900 <br>
+									attrverso gli episodi più significativi della <br>
+									politica, della società e della scienza. La narrazioe <br>
+									si sviluppa attraverso le foto, le icone e le <br>
+									parodizzazioni delle immagini che sono scolpite <br>
+									nell'immaginario di tutti. <br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#1a45e4">
+						<a class="content__link"><img class="content__img" src="img/set3/3.jpg" alt="img"/></a>
+					</div>
+					<div class="content__section" data-bgcolor="#6bdaac">
+						<a class="content__link"><img class="content__img" src="img/set3/4.jpg" alt="img"/></a>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/5.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>SANT'ABBONDIO IN COMO</h2>
+									Progettazione e realizzazione di un pieghevole <br>
+									a scopo illustrativo turistico per la Cattedrale di <br>
+									Sant'Abbondio in Como. Stampato a tecnica mista digitale e <br>
+									serigrafica artigianale. <br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/6.jpg" alt="img"/></a>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/7.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>JUICY SALIF</h2>
+								Esame a tempo di Disegno con la realizzazione di <br>
+								una tavola illustrativa di un oggetto di designn <br>
+								con proiezione prospettica a mano libera e renderizzazione. <br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/8.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>TAVOLA INCHIOSTRATA</h2>
+									Riproduzione inchiostrata di una tavola <br>
+									tratta dalla graphic novel "Tex". <br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/9.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>PAESAGGIO ALIENO -1-</h2>
+									Illustrazioni digitali di paesaggi alieni immaginati <br>
+									a partire dalla tecnica del cut-out paper. <br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/10.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>PAESAGGIO ALIENO -2-</h2>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/11.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>COPERTINA "AMBROGIO PESSINA"</h2>
+									Copertina del progetto "Adotta un fabbrica" <br>
+									per il volume sulla ex fabbrica "Ambrogio Pessina" <br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/12.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>REBRANDING MAGRATHEA</h2>
+									Ipotesi di loghi per l'esercizio di rebranding<br>
+									per l'identità del pianeta Magrathea appartenente<br>
+									all'universo di "Guida Galattica per Autostoppisti".<br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/13.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>GADGET MAGRATHEA</h2>
+									Gadget per il progetto di rebranding del pianeta <br>
+									Magrathea appartenente all'universo di "Guida Galattica <br>
+									per Autostoppisti". Gioco assemblabile in 3 pezzi <br>
+									realizzato con taglio laser. <br>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/14.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>ILLUSTRAZIONE -1- </h2>
+									"Here, in the forest,<br>
+									<span style="padding-left:100px">dark and deep,</span><br>
+									<span style="padding-left:110px">I offer you,</span><br>
+									<span style="padding-left:20px">eternal sleep."</span>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/15.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>ILLUSTRAZIONE -2-</h2>
+									"Here, in the forest,<br>
+									<span style="padding-left:100px">dark and deep,</span><br>
+									<span style="padding-left:110px">I offer you,</span><br>
+									<span style="padding-left:20px">eternal sleep."</span>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/16.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>INFOGRAFICA - LA MAFIA UCCIDE SOLO D'ESTATE</h2>
+									"Here, in the forest,<br>
+									<span style="padding-left:100px">dark and deep,</span><br>
+									<span style="padding-left:110px">I offer you,</span><br>
+									<span style="padding-left:20px">eternal sleep."</span>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/17.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>RENDERING -1- </h2>
+									"Here, in the forest,<br>
+									<span style="padding-left:100px">dark and deep,</span><br>
+									<span style="padding-left:110px">I offer you,</span><br>
+									<span style="padding-left:20px">eternal sleep."</span>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/18.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>RENDERING -2- </h2>
+									"Here, in the forest,<br>
+									<span style="padding-left:100px">dark and deep,</span><br>
+									<span style="padding-left:110px">I offer you,</span><br>
+									<span style="padding-left:20px">eternal sleep."</span>
+							</p>
+						</div>
+					</div>
+					<div class="content__section" data-bgcolor="#df1df2">
+						<a class="content__link"><img class="content__img" src="img/set3/19.jpg" alt="img"/></a>
+						<div>
+							<p class="content__text">
+								<h2>CONCORSO FOTOGRAFICO</h2>
+									"Here, in the forest,<br>
+									<span style="padding-left:100px">dark and deep,</span><br>
+									<span style="padding-left:110px">I offer you,</span><br>
+									<span style="padding-left:20px">eternal sleep."</span>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/charming.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script>
+
+	{
+		class Entry {
+			constructor(el) {
+				this.DOM = {el: el};
+				this.DOM.image = this.DOM.el.querySelector('.content__img');
+				this.DOM.title = {word: this.DOM.el.querySelector('.content__text')};
+				charming(this.DOM.title.word);
+				this.DOM.title.letters = Array.from(this.DOM.title.word.querySelectorAll('span'));
+				this.DOM.title.letters.forEach(letter => letter.dataset.initial = letter.innerHTML);
+				this.lettersTotal = this.DOM.title.letters.length;
+				observer.observe(this.DOM.el);
+			}
+			enter(direction = 'down') {
+				this.entertime = setTimeout(()=> {
+					this.DOM.title.word.style.opacity = 1;
+					anime.remove(this.DOM.title.letters);
+					anime({
+						targets: this.DOM.title.letters,
+						duration: 800,
+						delay: (target,index) => index*20,
+						easing: 'easeOutElastic',
+						translateY: [direction === 'down' ? '100%' : '-100%', '0%'],
+						opacity: {
+							value: [0,1],
+							duration: 300,
+							easing: 'linear'
+						}
+					});
+
+					bodyEl.style.backgroundColor = this.DOM.el.dataset.bgcolor;
+				}, 150);
+			}
+			exit(direction = 'down') {
+				anime.remove(this.DOM.title.letters);
+				if ( this.entertime ) {
+					clearTimeout(this.entertime);
+				}
+
+				anime({
+					targets: this.DOM.title.letters,
+					duration: 250,
+					delay: (target,index) => index*20,
+					easing: 'easeOutExpo',
+					translateY: ['0%',direction === 'down' ? '-100%' : '100%'],
+					opacity: {
+						value: [1,0],
+						duration: 150,
+						easing: 'linear'
+					},
+					complete: () => this.DOM.title.word.style.opacity = 0
+				});
+			}
+		}
+
+		let observer;
+		let current = -1;
+		let allentries = [];
+		const bodyEl = document.body;
+		const sections = Array.from(document.querySelectorAll('.content__section'));
+		// Preload all the images in the page..
+		imagesLoaded(document.querySelectorAll('.content__img'), () => {
+			document.body.classList.remove('loading');
+			if ('IntersectionObserver' in window) {
+				document.body.classList.add('ioapi');
+
+				observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if ( entry.intersectionRatio > 0.5 ) {
+							const newcurrent = sections.indexOf(entry.target);
+							if ( newcurrent === current ) return;
+							const direction = newcurrent > current;
+							if (current >= 0 ) {
+								allentries[current].exit(direction ? 'down' : 'up');
+							}
+							allentries[newcurrent].enter(direction ? 'down' : 'up');
+							current = newcurrent;
+						}
+					});
+				}, { threshold: 0.5 });
+
+				sections.forEach(section => allentries.push(new Entry(section)));
+			}
+		});
+	}
+
+	</script>
+
+	<script>
+
+	/* LOADER */
+
+	(function($){
+		'use strict';
+		$(window).on('load', function () {
+			if ($(".pre-loader").length > 0)
+			{
+				$(".pre-loader").fadeOut("slow");
+			}
+		});
+	})(jQuery)
+
+	/* =========================================== */
+
+	</script>
+
+</body></html>

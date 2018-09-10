@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A recreation of the collapsing logo effect seen on PracticalVR.">
+  <meta name="keywords" content="logo, animation, effect, demo, web developemnt, animejs">
+  <meta name="author" content="Luca Longa" />
+
+  <link rel="shortcut icon" href="./logositosmall.png">
+
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./style_playground.css">
+
+  <title>LL DESIGN</title>
+
+
+  <script src="jquery-3.3.1.js">document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
+
+
+</head>
+<body>
+
+  <!-- LOADER -->
+
+  <div class="pre-loader">
+    <div class="sk-fading-circle">
+      <div class="sk-circle1 sk-circle"></div>
+      <div class="sk-circle2 sk-circle"></div>
+      <div class="sk-circle3 sk-circle"></div>
+      <div class="sk-circle4 sk-circle"></div>
+      <div class="sk-circle5 sk-circle"></div>
+      <div class="sk-circle6 sk-circle"></div>
+      <div class="sk-circle7 sk-circle"></div>
+      <div class="sk-circle8 sk-circle"></div>
+      <div class="sk-circle9 sk-circle"></div>
+      <div class="sk-circle10 sk-circle"></div>
+      <div class="sk-circle11 sk-circle"></div>
+      <div class="sk-circle12 sk-circle"></div>
+    </div>
+  </div>
+
+  <!-- ======================================= -->
+
+
+  <main>
+
+    <div class="content">
+
+      <div class="sidebar">
+        <div>
+          <a href="index.html">
+            <img src="logositolarge.png">
+          </a>
+        </div>
+        <nav class="menu menu--laterale">
+
+          <a class="menu__item" href="./bio.html">
+            <span class="menu__item-name">Biografia</span>
+            <span class="menu__item-label">passioni e istruzione</span>
+          </a>
+
+          <a class="menu__item" href="./portfolio.html">
+            <span class="menu__item-name">Portfolio</span>
+            <span class="menu__item-label">tutti i miei lavori</span>
+          </a>
+
+          <a class="menu__item" href="#">
+            <span class="menu__item-name">Playground</span>
+            <span class="menu__item-label">spinner ed esercizi</span>
+          </a>
+
+          <a class="menu__item" href="./contatti.html">
+            <span class="menu__item-name">Contatti</span>
+          </a>
+
+        </nav>
+      </div>
+
+
+
+      <div class="principale">
+        <div>
+
+          <div id="sole"></div>
+
+          <div id="quadratoterra" class="immobile">
+            <div id="terra"></div>
+          </div>
+
+          <div id="quadratomarte" class="immobile">
+            <div id="marte" class="invisibile"></div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script>
+
+    /* LOADER */
+
+    (function($){
+      'use strict';
+      $(window).on('load', function () {
+        if ($(".pre-loader").length > 0)
+        {
+          $(".pre-loader").fadeOut("slow");
+        }
+      });
+    })(jQuery)
+
+    /* =========================================== */
+
+    function orbitale(){
+      if ($("#quadratomarte").hasClass("orbita2")){
+        $("#quadratomarte").removeClass("orbita2");
+        $("#quadratoterra").removeClass("orbita1");
+        $("#quadratomarte").addClass("orbita1");
+        $("#quadratoterra").addClass("orbita2");
+      }
+
+      else if ($("#quadratoterra").hasClass("orbita1")){
+        $("#quadratomarte").removeClass("immobile");
+        $("#marte").removeClass("invisibile");
+        $("#quadratomarte").addClass("orbita2");
+        $("#marte").addClass("visibile");
+      }
+
+      else
+      ($("#quadratoterra").hasClass("immobile"))
+      $("#quadratoterra").removeClass("immobile");
+      $("#quadratoterra").addClass("orbita1");
+    }
+
+
+    $("#sole").click(orbitale)
+
+    </script>
+
+  </body></html>

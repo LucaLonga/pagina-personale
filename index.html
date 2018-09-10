@@ -1,174 +1,112 @@
 <!DOCTYPE html>
-<html>
-<html class="no-js">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/griglia.css" type="text/css" media="screen">
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>LL DESIGN
-    </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A recreation of the collapsing logo effect seen on PracticalVR.">
+	<meta name="keywords" content="logo, animation, effect, demo, web developemnt, animejs">
+	<meta name="author" content="Luca Longa" />
 
-    <script src="js/jquery-3.3.1.js">
-    </script>
+	<link rel="shortcut icon" href="./logositosmall.png">
 
-    <script src="js/jquery.stellar.min.js">
-    </script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
 
-    <script>
-    jQuery(document).ready(function ($) {
-    $(window).stellar();
-    });
-    </script>
+	<title>LL DESIGN</title>
 
-    <script>
-    $('.navigation').singlePageNav({
-    updateHash: true
-    });
-    </script>
 
-    <style>
-    .spazio{
-      overflow:scroll;
-      position:absolute;
-      top: 20%;
-      right: 0px;
-      height: 80%;
-      width: 80%;
-      }
+	<script src="jquery-3.3.1.js">document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
 
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
-    </style>
 
-  </head>
-
-<!--INIZIO DEL CORPO-->
-
+</head>
 <body>
 
-    <!--Barra Principale-->
-<!--
- <div class="header">
-   <header class="menu">
-     <div class="container">
-     <nav>
-         <ul class="navigation">
-           <li><a href="#slide1">Pannello 1</a></li>
-           <li><a href="#slide2">Pannello 2</a></li>
-           <li><a href="#slide3">Pannello 3</a></li>
-           <li><a href="#slide4">Pannello 4</a></li>
-           <li><a href="#slide5">Pannello 4</a></li>
-           <li><a href="#slide6">Pannello 4</a></li>
-         </ul>
-       </nav>
-     </div>
-   </header>
--->
+	<!-- LOADER -->
 
-   <header>
-     <h1>LUCA LONGA</h1>
-     <h2>GRAPHIC DESIGNER</h2>
-     <div class="menupagina">
-       <div class="container">
-         <nav>
-           <ul class="navigation">
-             <li><button id="pulsante"><a href="#slide2">Pannello 2</a></button></li>
-             <li><button id="pulsante"><a href="#slide4">Pannello 4</a></button></li>
-             <li><button id="pulsante"><a href="#slide6">Pannello 4</a></button></li>
-           </ul>
-         </nav>
-       </div>
-     </div>
-   </header>
- </div>
+	<div class="pre-loader">
+		<div class="sk-fading-circle">
+			<div class="sk-circle1 sk-circle"></div>
+			<div class="sk-circle2 sk-circle"></div>
+			<div class="sk-circle3 sk-circle"></div>
+			<div class="sk-circle4 sk-circle"></div>
+			<div class="sk-circle5 sk-circle"></div>
+			<div class="sk-circle6 sk-circle"></div>
+			<div class="sk-circle7 sk-circle"></div>
+			<div class="sk-circle8 sk-circle"></div>
+			<div class="sk-circle9 sk-circle"></div>
+			<div class="sk-circle10 sk-circle"></div>
+			<div class="sk-circle11 sk-circle"></div>
+			<div class="sk-circle12 sk-circle"></div>
+		</div>
+	</div>
+
+	<!-- ======================================= -->
 
 
+	<main>
 
-<!--Menu del sito, navigazione interna fra le pagine, chiamata barralaterale-->
-<aside>
-  <nav id="barralaterale">
-    <ul>
-      <li><div class="contenitore"><a href="index.html" class="menulink">HOME</a></div></li>
-      <li><div class="contenitore"><a href="01biografia.html" class="menulink">BIO</a></div></li>
-      <li><div class="contenitore"><a href="02portfolio.html" class="menulink">PORTFOLIO</a></div></li>
-      <li><div class="contenitore"><a href="03contatti.html" class="menulink">CONTATTI</a></div></li>
-    </ul>
-  </nav>
-</aside>
+		<div class="content">
+
+		<div class="sidebar">
+			<nav class="menu menu--laterale">
+
+				<a class="menu__item" href="./bio.html">
+					<span class="menu__item-name">Biografia</span>
+					<span class="menu__item-label">passioni e istruzione</span>
+				</a>
+
+				<a class="menu__item" href="./portfolio.html">
+					<span class="menu__item-name">Portfolio</span>
+					<span class="menu__item-label">tutti i miei lavori</span>
+				</a>
+
+				<a class="menu__item" href="#">
+					<span class="menu__item-name">Playground</span>
+					<span class="menu__item-label">spinner ed esercizi</span>
+				</a>
+
+				<a class="menu__item" href="./contatti.html">
+					<span class="menu__item-name">Contatti</span>
+				</a>
+
+			</nav>
+		</div>
 
 
-  <main>
-      <section class="slide" id="slide1">
-      </section>
-      <section class="slide" id="slide2">
-      		<div class="container">
-         <div class="row">
-      				<h2></h2>
-      			</div>
-         </div>
-         <div class="row">
-      			<div>
-      				<h2></h2>
-      			</div>
-         </div>
-        </div>
-      	</section>
-      <section class="slide" id="slide3">
-      </section>
-      <section class="slide" id="slide4">
-        <div class="container">
-       <div class="row">
-            <h2></h2>
-          </div>
-       </div>
-       <div class="row">
-          <div>
-            <h1></h1>
-            <h2></h2>
-          </div>
-       </div>
-      </div>
-      </section>
-      <section class="slide" id="slide5">
-      </section>
-      <section class="slide" id="slide6">
-        <div class="container">
-       <div class="row">
-            <h2></h2>
-          </div>
-       </div>
-       <div class="row">
-          <div>
-            <h1></h1>
-            <h2></h2>
-          </div>
-       </div>
-      </div>
-      </section>
-  </main>
 
-<footer>
-  <p> © Copyright 2018 by Luca Longa. All rights reversed.</p>
-</footer>
+			<div class="principale">
+				<div class="principale__elemento principale__elemento--featured">
+					<div class="principale__elemento-img principale__elemento-img--grande">
 
-<script>
+						<div class="principale__elemento-titlewrap principale__elemento-titlewrap--featured">
+							<h3 class="principale__elemento-title principale__elemento-title--grande">Luca Longa</h3>
+							<mark> - All rights reversed. - </mark>
+							<p class="principale__elemento-subtitle">Technical portfolio design and implementation</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<p> © Copyright 2018 by Luca Longa</p>
+				</footer>
+			</div>
+		</div>
+	</main>
 
-window.onscroll = function() {myFunction()};
+	<script>
 
-var header = document.getElementById("myHeader");
+	/* LOADER */
 
-var sticky = header.offsetTop;
+	(function($){
+		'use strict';
+		$(window).on('load', function () {
+			if ($(".pre-loader").length > 0)
+			{
+				$(".pre-loader").fadeOut("slow");
+			}
+		});
+	})(jQuery)
 
-/* parallasse*/
-<section class="slide" id="slide1" data-stellar-background-ratio="0.5">
+	/* =========================================== */
 
-<section class="slide" id="slide3" data-stellar-background-ratio="0.5">
+	</script>
 
-<section class="slide" id="slide5" data-stellar-background-ratio="0.5">
-/* fine parallasse*/
-
-</script>
-
-  </body>
-</html>
+</body></html>
